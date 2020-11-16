@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { shade } from 'polished';
 
+
 export const Title = styled.h1`
   font-size: 48px;
   color: #3a3a3a;
@@ -42,5 +43,58 @@ export const Form = styled.form`
     &:hover {
       background: ${shade(.2, '#04d361')}
     }
+  }
+`;
+
+export const Repositories = styled.div`
+  margin-top: 80px;
+  max-width: 700px;
+  
+  a {
+    background: #fff;
+    color: #a8a8b3;
+    border-radius: 5px;
+    width: 100%;
+    padding: 24px;
+    text-decoration:none;
+
+    display: flex;
+    align-items: center;
+    transition: transform 300ms ease-in-out;
+
+    & + a {
+      margin-top: 16px;
+    }
+
+    &:hover {
+      transform: translateX(10px);
+    }
+    
+    img {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+    }
+    
+    div {
+      margin-left: 16px;
+      
+      strong {
+        font-size: 20px;
+        color: #3d3d4d;
+  
+        p {
+          font-size: 18px;
+          color: #a8a8b3;
+          margin-top: 4px;
+        }
+      }
+    }
+
+    svg {
+      margin-left: auto;
+      color: #cbcbd6;
+    }
+
   }
 `;
