@@ -26,9 +26,7 @@ const Dashboard: React.FC = () => {
       return [];
     }
   });
-
-
-
+  
   useEffect(() => {
     localStorage.setItem('@GithubExplorer:repositories', JSON.stringify(repositories))
   }, [repositories])
